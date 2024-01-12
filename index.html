@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <title>Code Editor</title>
+       <link rel="stylesheet" type="text/css" href="style.css"/>
+       <script defer type="text/javascript" src="pract.js"></script>
+       
+    </head>
+    <body>
+       <div class="container split">
+        
+		<button id="btn" onclick="saveFile()">
+			Save File
+		</button>
+        
+           <textarea id="htmlCode"  placeholder="Type HTML code here" spellcheck="false" oninput="update(0)"></textarea>
+           
+           <textarea id="cssCode"  placeholder="Type CSS code here" spellcheck="false" oninput="update(0)"></textarea>
+           
+           <textarea id="javascriptCode" spellcheck="false" placeholder="Type JavaScript code here" oninput="update(0)"></textarea>
+       </div>
+       <div class="iframe-container split">
+           <iframe id="viewer"></iframe>
+       </div>
+   
+    </body>
+    </html>
